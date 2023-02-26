@@ -1,0 +1,59 @@
+#about {
+  header {
+    h1 {
+      position: relative;
+      top: -70px;
+      left: 50px;
+      color: white;
+      width: max-content;
+      margin: 0;
+    }
+    img {
+      width: 100%;
+      height: 230px;
+    }
+    a {
+      margin-left: 10px;
+      margin-right: 10px;
+      text-decoration: none;
+      color: rebeccapurple;
+      font-size: 1.5rem;
+      font-weight: bold;
+      border-right: 1px solid;
+      padding-right: 5px;
+      &:hover {
+        color: red;
+      }
+    }
+  }
+  #main {
+    margin-left: 15px;
+  }
+  #aaa {
+    text-align: center;
+    img {
+      width: 30%;
+      margin-bottom: 100px;
+      margin-left: 10px;
+      margin-right: 10px;
+      animation-name: giraImagem;
+      animation-duration: 0.5s;
+      animation-timing-function: linear;
+      animation-fill-mode: forwards;
+      animation-direction: alternate;
+      animation-iteration-count: infinite;
+    }
+  }
+  @keyframes giraImagem {
+    0% {
+      transform: rotate(0) scale(0.8);
+    }
+    100% {
+      transform: rotate(720deg) scale(1.1);
+    }
+  }
+}
+
+p {
+  margin-right: 10px;
+}

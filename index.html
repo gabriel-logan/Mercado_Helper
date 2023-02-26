@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Feito para automatizar sua lista de supermercado e automatizar os calculos na hora da compra">
+    <title>SuperMercadoHelper</title>
+    <link rel="shortcut icon" href="./img/las.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div id="index">
+        <header>
+            <h1>Calcula Preço</h1>
+            <img src="./img/header-bg.png" alt="header">
+            <a href="./subdom/list.html">Listas de compras</a>
+            <a href="./subdom/about.html">Sobre</a>
+        </header>
+        <div class="main">
+            <div class="form">
+                <div id="div-prod">
+                    <label>Produto</label>
+                    <input id="input_prod" type="text">
+                </div>
+                <div id="div-preco">
+                    <label>Preço</label>
+                    <input id="input_preco" type="number" inputmode="numeric">
+                </div>
+                <div id="div-qnt">
+                    <label>Quantidade</label>
+                    <input id="input_qnt" type="number" inputmode="numeric">
+                </div>
+                <div id="div-btn">
+                    <button id="btn">+</button>
+                </div>
+            </div>
+            <span id="erro" style="color: red;"></span>
+            <div>
+                <h2>VALOR <span style="color: red;">TOTAL</span> DA COMPRA: <span id="span_result" style="color: red;">0</span> R$</h2>
+                <!--<h2>Numero de produtos adicionados: <span id="qnt_itens">0</span></h2>-->
+            </div>
+            <div id="div-listas">
+                <div class="lista">
+                    <h3 class="itens">PRODUTOS</h3>
+                    <h3 class="itens">PREÇO <span>R$</span></h3>
+                    <h3 class="itens">QUANTIA <span>x</span></h3>
+                    <h3 class="itens">VALOR TOTAL <span>R$</span></h3>
+                </div>
+            </div>
+            <div id="div-btn_clean">
+                <button style="color: red; cursor: pointer;" id="btn-clean">Limpar lista</button>
+            </div>
+        </div>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

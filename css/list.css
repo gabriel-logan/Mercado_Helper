@@ -1,0 +1,194 @@
+#list header h1 {
+  position: absolute;
+  left: 50px;
+  color: white;
+}
+
+@media (max-width: 500px) {
+  #list header h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 400px) {
+  #list header h1 {
+    font-size: 1rem;
+  }
+}
+
+#list header img {
+  width: 100%;
+}
+
+#list header a {
+  margin-left: 10px;
+  text-decoration: none;
+  border-right: 1px solid;
+  padding-right: 5px;
+  margin-inline: 10px;
+  color: rebeccapurple;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-right: 5px;
+}
+
+#list header a:hover {
+  color: red;
+}
+
+#list #container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#list #container #div_inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 25px;
+}
+
+#list #container #div_inputs label {
+  font-weight: bold;
+}
+
+#list #container #div_inputs input {
+  outline: none;
+  border: 1px solid #9595bd;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  padding: 1px 5px;
+  width: 90%;
+  height: 30px;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+#list #container #div_inputs input:hover {
+  border: 1px solid #202086;
+}
+
+#list #container #div_inputs input:focus {
+  border: 1px solid #da4040;
+}
+
+#list #container #div_inputs button {
+  margin-top: 5px;
+  width: 90%;
+  height: 90%;
+  background-color: #7b8aaa;
+  border: 1px solid #ba9fd3;
+  border-radius: 5px;
+  font-size: 2rem;
+  color: #485183;
+  text-shadow: 1px 1px 1px #2b1641;
+  cursor: pointer;
+}
+
+#list #container #div_inputs button:hover {
+  background-color: #928a99;
+}
+
+#list #container #div_inputs button:active {
+  background-color: #353436;
+}
+
+#list #container div {
+  text-align: center;
+}
+
+#list #container #erro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.5rem;
+  margin-top: 2px;
+}
+
+#list #container #div_pai-add {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+#list #container #div_pai-add #add_h3 {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#list #container #div_pai-add #add_h3 h3 {
+  padding: 5px;
+  border: 1px solid #12129e;
+  width: 290px;
+  min-height: 25px;
+  margin-block: 0.1em;
+  margin-inline: .3em;
+  position: relative;
+  background-color: white;
+  border-radius: 5px;
+}
+
+#list #container #div_pai-add #add_h3 h3 span {
+  position: absolute;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  cursor: pointer;
+  top: 0;
+  right: 1px;
+}
+
+#list #container #div_btn-clean #btn_clean {
+  cursor: pointer;
+  width: 250px;
+  background-color: red;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  border: 1px solid #b38e8e;
+  border-radius: 5px;
+  padding: 1px;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+#list #container #div_btn-clean span {
+  display: block;
+}
+
+@media (max-width: 300px) {
+  #list #container #div_btn-clean #btn_clean {
+    width: 200px;
+  }
+}
+/*# sourceMappingURL=list.css.map */

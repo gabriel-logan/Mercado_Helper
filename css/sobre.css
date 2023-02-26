@@ -1,0 +1,84 @@
+#about header h1 {
+  position: relative;
+  top: -70px;
+  left: 50px;
+  color: white;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0;
+}
+
+#about header img {
+  width: 100%;
+  height: 230px;
+}
+
+#about header a {
+  margin-left: 10px;
+  margin-right: 10px;
+  text-decoration: none;
+  color: rebeccapurple;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-right: 1px solid;
+  padding-right: 5px;
+}
+
+#about header a:hover {
+  color: red;
+}
+
+#about #main {
+  margin-left: 15px;
+}
+
+#about #aaa {
+  text-align: center;
+}
+
+#about #aaa img {
+  width: 30%;
+  margin-bottom: 100px;
+  margin-left: 10px;
+  margin-right: 10px;
+  -webkit-animation-name: giraImagem;
+          animation-name: giraImagem;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes giraImagem {
+  0% {
+    -webkit-transform: rotate(0) scale(0.8);
+            transform: rotate(0) scale(0.8);
+  }
+  100% {
+    -webkit-transform: rotate(720deg) scale(1.1);
+            transform: rotate(720deg) scale(1.1);
+  }
+}
+
+@keyframes giraImagem {
+  0% {
+    -webkit-transform: rotate(0) scale(0.8);
+            transform: rotate(0) scale(0.8);
+  }
+  100% {
+    -webkit-transform: rotate(720deg) scale(1.1);
+            transform: rotate(720deg) scale(1.1);
+  }
+}
+
+p {
+  margin-right: 10px;
+}
+/*# sourceMappingURL=sobre.css.map */

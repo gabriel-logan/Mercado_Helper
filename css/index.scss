@@ -1,0 +1,205 @@
+#index {
+  header {
+    h1 {
+      position: absolute;
+      left: 50px;
+      color: white;
+    }
+    img {
+      width: 100%;
+    }
+    a {
+      margin-left: 10px;
+      text-decoration: none;
+      border-right: 1px solid;
+      padding-right: 5px;
+      margin-inline: 10px;
+      color: rebeccapurple;
+      font-size: 1.5rem;
+      font-weight: bold;
+      padding-right: 5px;
+      &:hover {
+        color: red;
+      }
+    }
+  }
+  .main {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+    h1 {
+      &:active {
+        color: red;
+      }
+    }
+    .form {
+      display: grid;
+      grid-template-rows: 50px 50px;
+      grid-template-columns: 200px 200px;
+      div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        input {
+          text-align: center;
+          outline: none;
+          border: 1px solid rgb(149, 149, 189);
+          border-radius: 5px;
+          font-size: 1.2rem;
+          padding: 1px 5px;
+          width: 90%;
+          font-family: sans-serif;
+          &:hover {
+            border: 1px solid rgb(32, 32, 134);
+          }
+          &:focus {
+            border: 1px solid rgb(218, 64, 64);
+          }
+        }
+        #input_prod {
+          text-align: left;
+        }
+      }
+      #div-btn {
+        button {
+          width: 90%;
+          height: 90%;
+          background-color: #7b8aaa;
+          border: 1px solid rgb(186, 159, 211);
+          border-radius: 5px;
+          font-size: 2rem;
+          color: rgb(72, 81, 131);
+          text-shadow: 1px 1px 1px rgb(43, 22, 65);
+          cursor: pointer;
+          &:hover {
+            background-color: rgb(146, 138, 153);
+          }
+          &:active {
+            background-color: rgb(53, 52, 54);
+          }
+        }
+      }
+    }
+    #div-listas {
+      margin-top: 5px;
+      margin-bottom: 20px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .lista {
+        background-color: white;
+        width: 550px;
+        display: flex;
+        justify-content: center;
+        border-bottom: 1px solid rgb(153, 209, 153);
+        border-right: 1px solid rgb(153, 209, 153);
+        border-left: 1px solid rgb(153, 209, 153);
+        border-radius: 5px;
+        .itens {
+          margin-inline: 10px;
+          border-inline: 1px solid;
+          padding: 5px;
+          margin: 0;
+          width: 120px;
+          font-size: 1.1em;
+          word-break: break-all;
+        }
+        .itens-apagar {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  @media (max-width: 610px) {
+    header {
+      a {
+        top: 5px;
+        left: 5px;
+      }
+    }
+    .main {
+      margin-top: 50px;
+      div {
+        h2 {
+          font-size: 1.3em;
+        }
+      }
+      #div-listas {
+        .lista {
+          width: 390px;
+          .itens {
+            font-size: .75em;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 410px) {
+    header {
+      a {
+        font-size: 1rem;
+      }
+    }
+    .main {
+      .form {
+        grid-template-columns: 140px 140px;
+        justify-items: center;
+        div {
+          width: 130px;
+          label {
+            font-size: .8em;
+          }
+        }
+      }
+      div {
+        h2 {
+          font-size: 1rem;
+        }
+      }
+      #div-listas {
+        .lista {
+          width: 275px;
+          .itens {
+            font-size: .45em;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 310px) {
+    header {
+      h1 {
+        font-size: 1.2em;
+      }
+      a {
+        font-size: .8em;
+      }
+    }
+    .main {
+      .form {
+        grid-template-columns: 100px 100px;
+        justify-items: center;
+        div {
+          width: 80px;
+        }
+      }
+      div {
+        h2 {
+          font-size: .8rem;
+        }
+      }
+      #div-listas {
+        .lista {
+          width: 250px;
+          .itens {
+            font-size: .4em;
+          }
+        }
+      }
+    }
+  }
+}

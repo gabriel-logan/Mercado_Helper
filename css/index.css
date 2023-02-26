@@ -1,0 +1,229 @@
+#index header h1 {
+  position: absolute;
+  left: 50px;
+  color: white;
+}
+
+#index header img {
+  width: 100%;
+}
+
+#index header a {
+  margin-left: 10px;
+  text-decoration: none;
+  border-right: 1px solid;
+  padding-right: 5px;
+  margin-inline: 10px;
+  color: rebeccapurple;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-right: 5px;
+}
+
+#index header a:hover {
+  color: red;
+}
+
+#index .main {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 50px;
+}
+
+#index .main h1:active {
+  color: red;
+}
+
+#index .main .form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 50px 50px;
+      grid-template-rows: 50px 50px;
+  -ms-grid-columns: 200px 200px;
+      grid-template-columns: 200px 200px;
+}
+
+#index .main .form div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#index .main .form div input {
+  text-align: center;
+  outline: none;
+  border: 1px solid #9595bd;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  padding: 1px 5px;
+  width: 90%;
+  font-family: sans-serif;
+}
+
+#index .main .form div input:hover {
+  border: 1px solid #202086;
+}
+
+#index .main .form div input:focus {
+  border: 1px solid #da4040;
+}
+
+#index .main .form div #input_prod {
+  text-align: left;
+}
+
+#index .main .form #div-btn button {
+  width: 90%;
+  height: 90%;
+  background-color: #7b8aaa;
+  border: 1px solid #ba9fd3;
+  border-radius: 5px;
+  font-size: 2rem;
+  color: #485183;
+  text-shadow: 1px 1px 1px #2b1641;
+  cursor: pointer;
+}
+
+#index .main .form #div-btn button:hover {
+  background-color: #928a99;
+}
+
+#index .main .form #div-btn button:active {
+  background-color: #353436;
+}
+
+#index .main #div-listas {
+  margin-top: 5px;
+  margin-bottom: 20px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#index .main #div-listas .lista {
+  background-color: white;
+  width: 550px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: 1px solid #99d199;
+  border-right: 1px solid #99d199;
+  border-left: 1px solid #99d199;
+  border-radius: 5px;
+}
+
+#index .main #div-listas .lista .itens {
+  margin-inline: 10px;
+  border-inline: 1px solid;
+  padding: 5px;
+  margin: 0;
+  width: 120px;
+  font-size: 1.1em;
+  word-break: break-all;
+}
+
+#index .main #div-listas .lista .itens-apagar {
+  cursor: pointer;
+}
+
+@media (max-width: 610px) {
+  #index header a {
+    top: 5px;
+    left: 5px;
+  }
+  #index .main {
+    margin-top: 50px;
+  }
+  #index .main div h2 {
+    font-size: 1.3em;
+  }
+  #index .main #div-listas .lista {
+    width: 390px;
+  }
+  #index .main #div-listas .lista .itens {
+    font-size: .75em;
+  }
+}
+
+@media (max-width: 410px) {
+  #index header a {
+    font-size: 1rem;
+  }
+  #index .main .form {
+    -ms-grid-columns: 140px 140px;
+        grid-template-columns: 140px 140px;
+    justify-items: center;
+  }
+  #index .main .form div {
+    width: 130px;
+  }
+  #index .main .form div label {
+    font-size: .8em;
+  }
+  #index .main div h2 {
+    font-size: 1rem;
+  }
+  #index .main #div-listas .lista {
+    width: 275px;
+  }
+  #index .main #div-listas .lista .itens {
+    font-size: .45em;
+  }
+}
+
+@media (max-width: 310px) {
+  #index header h1 {
+    font-size: 1.2em;
+  }
+  #index header a {
+    font-size: .8em;
+  }
+  #index .main .form {
+    -ms-grid-columns: 100px 100px;
+        grid-template-columns: 100px 100px;
+    justify-items: center;
+  }
+  #index .main .form div {
+    width: 80px;
+  }
+  #index .main div h2 {
+    font-size: .8rem;
+  }
+  #index .main #div-listas .lista {
+    width: 250px;
+  }
+  #index .main #div-listas .lista .itens {
+    font-size: .4em;
+  }
+}
+/*# sourceMappingURL=index.css.map */

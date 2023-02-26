@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Mono", monospace;
+    font-weight: 600;
+}
+body{
+    background-color: #3264fe;
+}
+.container{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 45px;
+    box-shadow: 0 20px 30px rgba(0,0,0,0.15);
+}
+input[type="number"]{
+    -moz-appearance: textfield;
+    text-align: center;
+    font-size: 40px;
+    border: none;
+    background-color: #ffffff;
+    color: #202030;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+button{
+    color: #3264fe;
+    background-color: #ffffff;
+    border: none;
+    font-size: 40px;
+    cursor: pointer;
+}
+#decrement{
+    padding: 15px 5px 15px 25px;
+    border-radius: 45px 0 0 45px;
+}
+#increment{
+    padding: 15px 25px 15px 5px;
+    border-radius: 0 45px 45px 0;
+}

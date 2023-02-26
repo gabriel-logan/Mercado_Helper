@@ -1,0 +1,147 @@
+#list {
+  header {
+    h1 {
+      position: absolute;
+      left: 50px;
+      color: white;
+    }
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 1.5rem;
+      }
+    }
+    @media (max-width: 400px) {
+      h1 {
+        font-size: 1rem;
+      }
+    }
+    img {
+      width: 100%;
+    }
+    a {
+      margin-left: 10px;
+      text-decoration: none;
+      border-right: 1px solid;
+      padding-right: 5px;
+      margin-inline: 10px;
+      color: rebeccapurple;
+      font-size: 1.5rem;
+      font-weight: bold;
+      padding-right: 5px;
+      &:hover {
+        color: red;
+      }
+    }
+  }
+  #container {
+    display: flex;
+    flex-direction: column;
+    #div_inputs {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 25px;
+      label {
+        font-weight: bold;
+      }
+      input {
+        outline: none;
+        border: 1px solid rgb(149, 149, 189);
+        border-radius: 5px;
+        font-size: 1.2rem;
+        padding: 1px 5px;
+        width: 90%;
+        height: 30px;
+        font-family: sans-serif;
+        text-align: center;
+        &:hover {
+          border: 1px solid rgb(32, 32, 134);
+        }
+        &:focus {
+          border: 1px solid rgb(218, 64, 64);
+        }
+      }
+      button {
+        margin-top: 5px;
+        width: 90%;
+        height: 90%;
+        background-color: #7b8aaa;
+        border: 1px solid rgb(186, 159, 211);
+        border-radius: 5px;
+        font-size: 2rem;
+        color: rgb(72, 81, 131);
+        text-shadow: 1px 1px 1px rgb(43, 22, 65);
+        cursor: pointer;
+        &:hover {
+          background-color: rgb(146, 138, 153);
+        }
+        &:active {
+          background-color: rgb(53, 52, 54);
+        }
+      }
+    }
+    div {
+      text-align: center;
+    }
+    #erro {
+      display: flex;
+      justify-content: center;
+      font-size: 1.5rem;
+      margin-top: 2px;
+    }
+    #div_pai-add {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      #add_h3 {
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+        h3 {
+          padding: 5px;
+          border: 1px solid rgb(18, 18, 158);
+          width: 290px;
+          min-height: 25px;
+          margin-block: 0.1em;
+          margin-inline: .3em;
+          position: relative;
+          background-color: rgb(255, 255, 255);
+          border-radius: 5px;
+          span {
+            position: absolute;
+            height: min-content;
+            width: min-content;
+            cursor: pointer;
+            top: 0;
+            right: 1px;
+          }
+        }
+      }
+    }
+    #div_btn-clean {
+      #btn_clean {
+        cursor: pointer;
+        width: 250px;
+        background-color: red;
+        color: white;
+        text-shadow: 1px 1px 1px black;
+        border: 1px solid rgb(179, 142, 142);
+        border-radius: 5px;
+        padding: 1px;
+        font-size: 1rem;
+        font-weight: bold;
+        margin-top: 5px;
+      }
+      span {
+        display: block;
+      }
+      @media (max-width: 300px) {
+        #btn_clean {
+          width: 200px;
+        }
+      }
+    }
+  }
+}
